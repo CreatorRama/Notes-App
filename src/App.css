@@ -1,0 +1,98 @@
+/* Why Tailwind-inspired utility classes: For rapid prototyping with consistent spacing and colors */
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-nav {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.app-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.app-nav a:hover {
+  color: #007bff;
+}
+
+.add-note, .notes-list {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.add-note label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-note input,
+.add-note textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-note textarea {
+  min-height: 100px;
+}
+
+.add-note button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-note button:hover {
+  background: #0056b3;
+}
+
+.add-note button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.notes-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notes-list li {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.notes-list h3 {
+  margin-top: 0;
+}
+
+.notes-list small {
+  color: #666;
+  font-size: 0.8em;
+}
+
+.error {
+  color: #dc3545;
+  background: #f8d7da;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
