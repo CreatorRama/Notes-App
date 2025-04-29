@@ -66,7 +66,7 @@ const NotesList = () => {
                 )}
               </div>
               {isTruncated && hoveredNoteId === note.id && (
-                <div className="tooltip">Click to expand</div>
+                <div className="tooltip">Click on Text to expand</div>
               )}
               <small>{new Date(note.createdAt).toLocaleString()}</small>
             </li>
