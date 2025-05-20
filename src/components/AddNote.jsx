@@ -40,7 +40,7 @@ const AddNote = () => {
           <input
             type="text"
             value={title}
-            style={{backgroundColor:"darkblue",color:"red"}}
+            style={{backgroundColor:"lightblue",color:"green",fontSize:"30px"}}
             onChange={(e) => setTitle(e.target.value)}
             required
           />
@@ -48,7 +48,7 @@ const AddNote = () => {
         <div>
           <label style={{color:"pink"}}>Content</label>
           <textarea
-           style={{backgroundColor:"darkblue",color:"red"}}
+           style={{backgroundColor:"lightblue",color:"red",fontSize:"15px"}}
             value={content}
             onChange={(e) => setContent(e.target.value)}
             required
