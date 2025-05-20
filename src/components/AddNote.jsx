@@ -32,21 +32,23 @@ const AddNote = () => {
 
   return (
     <div className="add-note">
-      <h2>Add New Note</h2>
+      <h2 style={{color:"cornflowerblue"}}>Add New Note</h2>
       {error && <div className="error">{error}</div>}
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Title</label>
+          <label style={{color:"pink"}}>Title</label>
           <input
             type="text"
             value={title}
+            style={{backgroundColor:"darkblue",color:"red"}}
             onChange={(e) => setTitle(e.target.value)}
             required
           />
         </div>
         <div>
-          <label>Content</label>
+          <label style={{color:"pink"}}>Content</label>
           <textarea
+           style={{backgroundColor:"darkblue",color:"red"}}
             value={content}
             onChange={(e) => setContent(e.target.value)}
             required

@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <h1>Custom Note Service</h1>
+        <h1 style={{color:"red"}}>Custom Note Service</h1>
         <Nav />
         <Routes>
           <Route path="/" element={<AddNote />} />

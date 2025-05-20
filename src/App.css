@@ -69,13 +69,14 @@
 /* Notes List Styles */
 .notes-list {
   max-width: 800px;
+  background-color:aquamarine;
   margin: 0 auto;
   padding: 20px;
 }
 
 .note-item {
   position: relative;
-  background: white;
+  background: bisque;
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -89,7 +90,7 @@
 
 .note-content {
   margin: 10px 0;
-  color: #333;
+  color: #a61010;
   white-space: pre-wrap;
   word-break: break-word;
   cursor: pointer;
