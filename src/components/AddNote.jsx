@@ -7,9 +7,7 @@ const AddNote = () => {
   const [isSaving, setIsSaving] = useState(false);
   const [error, setError] = useState(null);
 
-  // Why I chose useState + this submit handler: 
-  // Simple form state management is sufficient for this small form, and the handler
-  // encapsulates all the submission logic cleanly.
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title.trim() || !content.trim()) return;

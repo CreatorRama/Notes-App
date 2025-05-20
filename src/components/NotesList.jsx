@@ -22,7 +22,9 @@ const NotesList = () => {
       setError('Failed to load notes. Please refresh the page.');
       console.error(err);
     } finally {
-      setLoading(false);
+      setTimeout(()=>{
+        setLoading(false)
+      },500)
     }
   }, []);
 
@@ -33,7 +35,12 @@ const NotesList = () => {
     }));
   };
 
-  if (loading) return <div className="loading">Loading notes...</div>;
+  if (loading) return (
+  <div className="loading-container">
+    <div className="loading">Loading notes...</div>
+    <div className="spinner"></div>
+  </div>
+);
   if (error) return <div className="error">{error}</div>;
   if (!notes.length) return <div className="empty">No notes yet. Add your first note!</div>;
 
